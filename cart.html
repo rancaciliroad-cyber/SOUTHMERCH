@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang Belanja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Keranjang Belanja 🛒</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Keranjang</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Daftar Belanja</h2>
+    <ul id="listKeranjang"></ul>
+    <h3 id="total"></h3>
+    <a id="checkout" class="checkout" target="_blank">Checkout via WhatsApp</a>
+  </main>
+
+  <footer>
+    <p>© 2025 Toko Moon</p>
+  </footer>
+
+  <script>
+    let keranjang = JSON.parse(localStorage.getItem("keranjang")) || [];
+    let list = document.getElementById("listKeranjang");
+    let total = 0;
+
+    keranjang.forEach(item => {
+      let li = document.createElement("li");
+      li.textContent = item.nama + " - Rp" + item.harga;
+      list.appendChild(li);
+      total += item.harga;
+    });
+
+    document.getElement
