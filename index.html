@@ -8,8 +8,8 @@
   <header>
     <div class="logo">Southteam</div>
     <input type="text" placeholder="Cari produk...">
-    <button>Login</button>
-    <button>Keranjang</button>
+    <button id="loginBtn">Login</button>
+    <button id="cartBtn">Keranjang</button>
   </header>
   <section class="banner">
     <img src="banner.jpg" alt="Promo">
@@ -20,9 +20,28 @@
       <div class="item">
         <img src="produk1.jpg" alt="Produk 1">
         <p>Rp 100.000</p>
-        <button>Beli</button>
+        <button class="addCart">Beli</button>
       </div>
     </div>
   </section>
+
+  <!-- Modal Login -->
+  <div id="loginModal" class="modal">
+    <form>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+    </form>
+  </div>
+
+  <!-- Modal Keranjang -->
+  <div id="cartModal" class="modal">
+    <h2>Keranjang</h2>
+    <div id="cartItems"></div>
+    <button id="checkoutBtn">Checkout</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-</html>
+  </html>
+      
