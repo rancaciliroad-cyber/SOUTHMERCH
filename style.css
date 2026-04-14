@@ -8,3 +8,13 @@ header {
   color: #fff;
   padding: 10px;
 }
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #000;
+}
