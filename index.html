@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Southteam</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Southteam | Shopee-like</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="logo">Southteam</div>
-    <input type="text" placeholder="Cari produk...">
-    <button id="loginBtn">Login</button>
-    <button id="cartBtn">Keranjang</button>
+    <input type="text" class="search" placeholder="Cari produk...">
+    <div class="icons">
+      <button id="loginBtn" class="btn">Login</button>
+      <button id="cartBtn" class="btn">Keranjang</button>
+      <button id="notifBtn" class="btn">🔔</button>
+    </div>
   </header>
   <section class="banner">
-    <img src="banner.jpg" alt="Promo">
+    <img src="banner1.jpg" alt="Promo 1">
+    <img src="banner2.jpg" alt="Promo 2">
   </section>
   <section class="produk">
     <h2>Produk Populer</h2>
@@ -20,28 +26,17 @@
       <div class="item">
         <img src="produk1.jpg" alt="Produk 1">
         <p>Rp 100.000</p>
-        <button class="addCart">Beli</button>
+        <button class="addCart btn">Beli</button>
       </div>
     </div>
   </section>
 
-  <!-- Modal Login -->
-  <div id="loginModal" class="modal">
-    <form>
-      <input type="text" placeholder="Username">
-      <input type="password" placeholder="Password">
-      <button>Login</button>
-    </form>
-  </div>
-
-  <!-- Modal Keranjang -->
-  <div id="cartModal" class="modal">
-    <h2>Keranjang</h2>
-    <div id="cartItems"></div>
-    <button id="checkoutBtn">Checkout</button>
-  </div>
+  <!-- Modal -->
+  <div id="loginModal" class="modal">...</div>
+  <div id="cartModal" class="modal">...</div>
+  <div id="notifModal" class="modal">...</div>
 
   <script src="script.js"></script>
 </body>
-  </html>
-      
+    </html>
+    
