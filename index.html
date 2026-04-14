@@ -1,43 +1,38 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>South Merch</title>
+  <title>Southteam</title>
+</head>
+<body>
+  <h1>Selamat datang di Southteam!</h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Southteam</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>South Merch 🛍️</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="cart.html">Keranjang</a>
-    </nav>
+    <div class="logo">Southteam</div>
+    <input type="text" placeholder="Cari produk...">
+    <button>Login</button>
+    <button>Keranjang</button>
   </header>
-
-  <main>
-    <h2>Produk Kami</h2>
-    <div class="produk-list">
-      <div class="produk">
-        <img src="https://via.placeholder.com/200" alt="Produk 1">
-        <h3>Produk A</h3>
-        <p>Rp50.000</p>
-        <button onclick="tambahKeranjang('Produk A', 50000)">Beli</button>
+  <section class="banner">
+    <img src="banner.jpg" alt="Promo">
+  </section>
+  <section class="produk">
+    <h2>Produk Populer</h2>
+    <div class="grid">
+      <div class="item">
+        <img src="produk1.jpg" alt="Produk 1">
+        <p>Rp 100.000</p>
       </div>
-
-      <div class="produk">
-        <img src="https://via.placeholder.com/200" alt="Produk 2">
-        <h3>Produk B</h3>
-        <p>Rp75.000</p>
-        <button onclick="tambahKeranjang('Produk B', 75000)">Beli</button>
-      </div>
+      <!-- Tambah produk -->
     </div>
-  </main>
-
-  <footer>
-    <p>© 2025 Toko Moon</p>
-  </footer>
-
-  <script src="script.js"></script>
+  </section>
 </body>
-                     </html>
+      </html>
+      
